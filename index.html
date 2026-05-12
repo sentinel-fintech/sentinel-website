@@ -5,35 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENTINEL | High-Performance Security Infrastructure</title>
     <style>
-        body { background-color: #0a0a0a; color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; text-align: center; }
+        body { background-color: #0a0a0a; color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; text-align: center; display: flex; flex-direction: column; min-height: 100vh; }
+        .content { flex: 1; }
         .banner-container { width: 100%; max-width: 1200px; margin: 0 auto; padding-top: 20px; }
         .banner-container img { width: 100%; height: auto; border-radius: 10px; border: 1px solid #333; }
-        .hero { padding: 60px 20px; border-bottom: 2px solid #76b900; } /* NVIDIA Green */
+        .hero { padding: 60px 20px; border-bottom: 2px solid #76b900; }
         h1 { font-size: 3rem; letter-spacing: 2px; margin-top: 20px; }
         .tech-stack { color: #76b900; font-weight: bold; margin: 20px 0; }
         .description { max-width: 800px; margin: 0 auto; line-height: 1.6; font-size: 1.2rem; color: #cccccc; }
         .badge { display: inline-block; padding: 10px 20px; background: #222; border-radius: 5px; margin-top: 40px; border: 1px solid #444; }
-        footer { margin-top: 100px; padding: 20px; color: #666; font-size: 0.8rem; }
+        
+        footer { padding: 40px 20px; color: #666; font-size: 0.8rem; background: #050505; }
+        footer a { color: #76b900; text-decoration: none; margin: 0 10px; }
+        footer a:hover { text-decoration: underline; }
+        .legal-section { max-width: 800px; margin: 20px auto 0; text-align: left; border-top: 1px solid #222; padding-top: 20px; display: none; }
+        .legal-section:target { display: block; }
     </style>
 </head>
 <body>
 
-    <div class="banner-container">
-        <img src="banner.png" alt="Sentinel Banner">
-    </div>
-
-    <div class="hero">
-        <h1>SENTINEL</h1>
-        <p class="tech-stack">C++ | NVIDIA RTX 6000 ADA | DEPIN</p>
-        <div class="description">
-            High-Performance Security Infrastructure for FinTech and DePIN ecosystems. <br>
-            "Safety is not a feature, it's the foundation."
+    <div class="content">
+        <div class="banner-container">
+            <img src="banner.png" alt="Sentinel Banner">
         </div>
-        <div class="badge">Supported by CyberLab Karlsruhe</div>
+
+        <div class="hero">
+            <h1>SENTINEL</h1>
+            <p class="tech-stack">C++ | NVIDIA RTX 6000 ADA | DEPIN</p>
+            <div class="description">
+                High-Performance Security Infrastructure for FinTech and DePIN ecosystems. <br>
+                "Safety is not a feature, it's the foundation."
+            </div>
+            <div class="badge">Supported by CyberLab Karlsruhe</div>
+        </div>
     </div>
 
     <footer>
-        &copy; 2026 Mario Andrijevć Softwareentwicklung Sentinel Fintech | <a href="mailto:mario@sentinel-fintech.eu" style="color: #76b900;">Kontakt</a>
+        <p>&copy; 2026 Mario Andrijevć Softwareentwicklung Sentinel Fintech</p>
+        <a href="mailto:mario@sentinel-fintech.eu">Kontakt</a> | 
+        <a href="#legal">Impressum & Datenschutz</a>
+
+        <div id="legal" class="legal-section">
+            <strong>Impressum</strong><br>
+            Angaben gemäß § 5 TMG:<br>
+            Mario Andrijevć<br>
+            Softwareentwicklung Sentinel Fintech<br>
+            [Jesinger Str.55]<br>
+            [73230 Kirchheim Teck]<br><br>
+            <strong>Kontakt:</strong><br>
+            E-Mail: mario@sentinel-fintech.eu<br><br>
+            <strong>Datenschutz:</strong><br>
+            Diese Webseite dient rein informatorischen Zwecken. Es werden keine personenbezogenen Daten erhoben, keine Cookies verwendet und keine Tracking-Tools eingesetzt. Der Host der Seite ist GitHub Pages (GitHub Inc.). Hierbei werden technisch notwendige Logfiles (z.B. IP-Adresse) verarbeitet, um die Seite bereitzustellen.
+        </div>
     </footer>
+
 </body>
 </html>
